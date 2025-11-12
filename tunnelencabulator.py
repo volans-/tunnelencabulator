@@ -160,11 +160,7 @@ def surmount_host_line(host, ip, *, dest=None):
     return f"{ip:16}{host:32}" + (f"# {dest}\t" if dest else "") + MAGIC
 
 
-# TODO IPv6 support
-# (NB: it is actually impossible to provide --ssh-tunnel support for IPv6.
-# In IPv4, all of 127.0.0.0/8 is reserved for loopback.  In IPv6, there is
-# exactly *one* loopback address, ::1/128.  If you think this is sadlarious,
-# I agree.)
+# TODO IPv6 support via a cheeky IPv6 ULA range, like EC2 does.  fd00:1:4907::/48 perhaps
 def apply_encabulation(lines, *, port_forwarding_dingle_arm=False, dest,
                        text_cdn_hosts, tunnel_hosts, tunnel_net):
     """A function to be passed to rewrite_hosts, mostly."""
