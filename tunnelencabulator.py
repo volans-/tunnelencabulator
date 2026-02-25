@@ -77,11 +77,12 @@ TUNNEL_NET = "127.149.7."  # There's no place like AS14907
 #         /_____FORMATTED_OUTPUT_____/ { x=1 }'
 BASTIONS = {
     'eqiad': 'bast1003.wikimedia.org',
-    'codfw': 'bast2002.wikimedia.org',
-    'esams': 'bast3006.wikimedia.org',
-    'ulsfo': 'bast4004.wikimedia.org',
-    'eqsin': 'bast5003.wikimedia.org',
-    'drmrs': 'bast6002.wikimedia.org',
+    'codfw': 'bast2003.wikimedia.org',
+    'esams': 'bast3007.wikimedia.org',
+    'ulsfo': 'bast4005.wikimedia.org',
+    'eqsin': 'bast5004.wikimedia.org',
+    'drmrs': 'bast6003.wikimedia.org',
+    'magru': 'bast7002.wikimedia.org',
 }
 
 MAGIC = "# added by tunnelencabulator"
